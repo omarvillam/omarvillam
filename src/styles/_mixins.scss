@@ -1,0 +1,19 @@
+@mixin container {
+    max-width: 90vw;
+    margin: 0px auto;
+}
+
+@mixin button-primary {
+    background-color: transparent;
+    cursor: pointer;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    padding: 14px 16px 12px 16px;
+    transition: ease .4s;
+
+    &:hover {
+        background-color: $color-primary;
+        color: #EFEFEF;
+    }
+}

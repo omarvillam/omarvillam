@@ -1,0 +1,103 @@
+@import "../../styles/global.scss";
+
+footer {
+    position: relative;
+    background-color: #22303C;
+    text-align: center;
+    
+    .footerContent {
+        position: relative;
+
+        margin: 0 auto;
+        padding: 25px 0px;
+        width: 100%;
+        
+        .bgLeft {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            @include respond-below(sm) {
+                display: none;
+            }
+        }
+
+        .bgRight {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            @include respond-below(sm) {
+                display: none;
+            }
+        }
+
+        button {
+            @include button-primary;
+            
+            text-transform: uppercase;
+            padding: 16px 28px;
+            display: block;
+            font-size: 24px;
+            margin: 50px auto 0px auto;
+            
+            &:hover {
+                a {
+                    color: $color-text;
+                }
+            }
+            
+            a {
+                color: $color-primary;
+                text-decoration: unset;
+
+            }
+
+        }
+        
+        .socialMedia {
+            margin-top: 25px;
+            
+            svg {
+                font-size: 24px;
+                margin: 25px;
+                color: #2E6496;
+            }
+        }
+        
+        .items {
+            margin: 0 auto;
+            text-transform: uppercase;
+            
+            ul {
+                margin-top: 30px;
+                
+                a {
+                    color: $color-text;
+                    text-decoration: unset;
+                    margin: 0px 25px;
+                    display: inline;
+                    font-size: 28px;
+                    font-weight: 600;
+                    transition: all ease .1s;
+
+                    &:hover {
+                        color: #d6d6d6;
+                    }
+
+                    @media (max-width: 321px) {
+                        font-size: 18px;
+                        margin: 0px 15px;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #868686; 
+            font-weight: 300!important;
+        }
+    }
+}

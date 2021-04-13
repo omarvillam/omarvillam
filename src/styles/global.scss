@@ -1,0 +1,16 @@
+@import "./media_queries";
+@import "./mixins";
+@import "./reset";
+@import "./vars";
+
+html {
+    color: #EFEFEF;
+    font-family: "Harry";
+    font-weight: 900;
+    background-color: #15202B;
+}
+
+@font-face {
+    font-family: "Harry";
+    src: "/fonts/Harry Fat.otf"
+}

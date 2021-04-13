@@ -1,0 +1,365 @@
+@import "../styles/global.scss";
+
+.page {
+    position: relative;
+
+    img {
+        z-index: -1;
+        &.background {
+            position: absolute;
+            width: 100%;
+            top: -7%;
+        }
+    }
+
+    &:before {
+        content: '';
+        background-image: url("/images/home/background.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+    }
+    
+    .hero {
+        @include container;
+        background-color: #192734;
+        box-shadow: 0px 10px 5px 5px rgba(0, 0, 0, 0.25);
+
+        .heroContent {
+            padding: 50px 100px 50px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include respond-below(lg) {
+                padding: 25px 50px 25px 50px;
+                flex-wrap: wrap;
+            }
+
+            @media (max-width: 321px) {
+                padding: 15px;
+            }
+
+            > div {
+                
+                @include respond-below(lg) {
+                    flex-basis: 50%;
+                }
+
+                @include respond-below(sm) {
+                    flex-basis: 100%;
+                }
+
+                &:first-child {
+                    p { 
+                        color: $color-primary;
+                        font-size: 42px;
+                        margin-bottom: 25px;
+                    }
+                    
+                    h1 {
+                        text-transform: uppercase;
+                        font-size: 100px;
+                        display: inline;
+
+                        @include respond-below(xl) {
+                            font-size: 80px;
+                        }                        
+                    }
+
+                    svg {
+                        position: relative;
+                        top: 15px;
+                        margin-left: 25px;
+                        font-size: 62px;
+                        color: $color-primary;
+
+                        @include respond-below(xl) {
+                            display: none;
+                        }
+                    }
+                }
+    
+                &:last-child {
+                    display: flex;
+                    align-items: center;
+
+                    @include respond-below(xl) {
+                        flex-wrap: wrap;   
+                    }
+
+                    a {
+                        cursor: pointer;
+                        display: flex;
+                        font-size: 28px;
+                        align-items: center;
+                        margin-left: 25px;
+                        text-decoration: unset;
+                        border: 1px solid $color-text;
+                        border-radius: 5px;
+                        padding: 32px 48px;
+                        color: $color-text;
+                        transition: ease all .4s;
+
+                        @include respond-below(xl) {
+                            flex-basis: 100%;
+                            margin-top: 25px; 
+                        }
+
+                        @include respond-below(lg) {
+                            font-size: 20px;
+                        }
+
+
+                        @include respond-below(sm) {
+                            margin-left: unset;
+                            font-size: 22px;
+                        }
+
+                        &:hover {
+                            color: $color-primary;
+                            border-color: $color-primary;
+
+                            svg {
+                                color: $color-primary;
+
+                            }
+                        }
+                        
+                        svg {
+                            margin-right: 25px;
+                            font-size: 32x;
+                            color: $color-text;
+
+                            @include respond-below(lg) {
+                                font-size:24px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+    .about {
+        @include container;
+        background-color: #22303C;
+        position: relative;
+        
+        &:before {
+            content: '';
+            background-color: #22303C;
+            position: absolute;
+            width: 5%;
+            height: 100%;
+            left: -5%;
+            top: 0%;
+        }
+
+        &:after {
+            content: '';
+            background-color: #22303C;
+            position: absolute;
+            width: 5%;
+            height: 100%;
+            right: -5%;
+            top: 0%;
+        }
+
+        .aboutContent {
+            display: flex;
+            padding: 100px;
+            
+            @include respond-below(sm) {
+                padding: 25px;
+                flex-wrap: wrap;
+            }
+
+            @include respond-tablet() {
+                padding: 50px;
+            }
+
+            > div {
+                &:first-child {
+                    flex-basis: 30%;
+                    
+                    @include respond-below(lg) {
+                        flex-basis: 40%
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    
+                        @include respond-below(sm) {
+                            display: none;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-left: 50px;
+                    flex-basis: 70%;
+                    display: flex;
+                    flex-direction: column;
+
+                    @include respond-below(sm) {
+                        margin-left: unset;
+                        flex-basis: 100%;
+                    }
+
+                    h1 {
+                        font-size: 50px;
+                        color: $color-primary;
+                        display: block;
+                        margin-bottom: 25px;
+                    }
+                    
+                    p {
+                        margin: 15px 0px;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 40px;
+                        letter-spacing: 2.5px;
+                        font-family: 'Arial';
+
+                        @include respond-below(lg) {
+                            font-size: 24px;
+                        }
+
+                        @include respond-below(sm) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        @include container;
+        margin-top: 75px;
+        margin-bottom: 75px;
+
+        .servicesContent {
+            padding: 0px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            @include respond-below(sm) {
+                padding: 50px;
+            }
+
+            @media (max-width: 321px) {
+                padding: 25px;
+            }
+
+            h1 {
+                color: $color-primary;
+                font-size: 36px;
+                flex-basis: 100%;
+            }
+
+            > div {
+                margin-top: 50px;
+                flex-basis: 25%;
+                display: flex;
+
+                @include respond-below(lg) {
+                    flex-basis: 33.33%;
+                }
+
+                @include respond-below(sm) {
+                    flex-basis: 50%;
+                }
+
+                @media (max-width: 321px) {
+                    flex-basis: 100%;
+                }
+
+                img {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+
+            
+        }
+
+    }
+
+    
+    .external {
+        @include container;
+
+        .externalContent {
+            padding: 50px 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+
+            flex-wrap: wrap;
+
+            h1 {
+                color: $color-primary;
+                font-size: 36px;
+                margin-bottom: 50px;
+                flex-basis: 100%;
+            }
+
+            a {
+                margin-left: 25px;
+                cursor: pointer;
+                display: flex;
+                font-size: 28px;
+                align-items: center;
+                text-decoration: unset;
+                border: 1px solid $color-text;
+                border-radius: 5px;
+                padding: 32px 48px;
+                color: $color-text;
+                transition: ease all .4s;
+
+                @include respond-below(xl) {
+                    flex-basis: 100%;
+                    margin-top: 25px; 
+                }
+
+                @include respond-below(lg) {
+                    font-size: 20px;
+                }
+
+
+                @include respond-below(sm) {
+                    margin-left: unset;
+                    font-size: 28px;
+                }
+
+                &:hover {
+                    color: $color-primary;
+                    border-color: $color-primary;
+
+                    svg {
+                        color: $color-primary;
+
+                    }
+                }
+                
+                svg {
+                    margin-right: 25px;
+                    font-size: 32x;
+                    color: $color-text;
+
+                    @include respond-below(lg) {
+                        font-size:24px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
