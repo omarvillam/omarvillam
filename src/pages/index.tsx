@@ -95,7 +95,7 @@ export default function Home() {
 							<FontAwesomeIcon icon={faEnvelope} />Look at Figma
 						</a>
 						
-						<a href="https://wwww.github.com">
+						<a href="https://github.com/omarvillam/omarvillam">
 							<FontAwesomeIcon icon={faGithub} />Look at Github
 						</a>					
 					</div>
