@@ -170,7 +170,7 @@
 
         .aboutContent {
             display: flex;
-            padding: 100px;
+            padding: 50px 100px;
             
             @include respond-below(sm) {
                 padding: 25px;
@@ -219,12 +219,15 @@
                     }
                     
                     p {
-                        margin: 15px 0px;
                         font-weight: 500;
-                        font-size: 24px;
+                        font-size: 20px;
                         line-height: 40px;
                         letter-spacing: 2.5px;
                         font-family: 'Arial';
+
+                        &:last-child {
+                            margin-top: 25px;
+                        }
 
                         @include respond-below(lg) {
                             font-size: 24px;

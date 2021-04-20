@@ -4,7 +4,7 @@ import * as styles from './home.module.scss'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
-import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { faFigma, faGithub } from "@fortawesome/free-brands-svg-icons"
 
 export default function Home() {
     return (
@@ -21,12 +21,12 @@ export default function Home() {
 						</div>
 
 						<div>
-							<a href="#">
+							<a href="mailto:omarvilla0406@gmail.com">
 								<FontAwesomeIcon icon={faEnvelope} />Send me a email
 							</a>
 							
-							<a href="#">
-								<FontAwesomeIcon icon={faGithub} />Look at my Github
+							<a href="https://github.com/omarvillam">
+								<FontAwesomeIcon icon={faGithub} />Check my Github
 							</a>
 						</div>
 					</div>
@@ -35,15 +35,15 @@ export default function Home() {
 				<article className={styles.about} id="about">
 					<div className={styles.aboutContent}>
 						<div>
-							<img src="/images/home/placeholder2.png" alt="about" />
+							<img src="/images/home/about.svg" alt="about" />
 						</div>
 						
 						<div>
 							<h1>About me</h1>
 
-							<p>My name is Omar Villalobos. I am an eight-teen year's olds junior front-end developer and student of Global Business Management based in Buenos Aires, Argentina. I am available to use a variety of front-end programming languages with the purpose of creating user-friendly pages with Design mobile-based features, and I am proficient with Javascript frameworks such as ReactJS, GatsbyJS, and NextJS, also I can work with visual frameworks such as Figma in order to build high-quality, mockups and design prototypes. As a secondary rule, I am capable to help the organization with my Business Management skills.</p>
+							<p>My name is Omar Villalobos, I am a front-end developer with over 2 years of experience and I am available to use a variety of front-end technologies with the purpose of creating user-friendly pages with mobile features. I am proficient in JavaScript frameworks with TypeScript such as ReactJS, Redux, GatsbyJS, and NextJS, also I can work with prototyping tools for UI/UX in order to build high-quality mockups. Also, I am studying Global Business Management, I am capable to help the organization with my Business Management skills in lines of code</p>
 
-							<p>TL:DR: Junior front end developer, business management student, visual frameworks</p>
+							<p>TL:DR: Front end developer, React, Redux, Gatsby, Next. Prototyping tools and business management skills</p>
 						</div>
 					</div>
 				</article>
@@ -92,7 +92,7 @@ export default function Home() {
 						<h1>Check this page in...</h1>
 
 						<a href="https://www.figma.com/proto/MT84iRflR8mRWyHW617Ukq/Omar-Villalobos?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1">
-							<FontAwesomeIcon icon={faEnvelope} />Look at Figma
+							<FontAwesomeIcon icon={faFigma} />Look at Figma
 						</a>
 						
 						<a href="https://github.com/omarvillam/omarvillam">

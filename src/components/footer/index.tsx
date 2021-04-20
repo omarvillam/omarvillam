@@ -22,7 +22,7 @@ export default function Footer(): JSX.Element {
                 </button>
 
                 <div className={styles.socialMedia}>
-                    <a href="https://github.com/omaravilla">
+                    <a href="https://github.com/omarvillam">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>    
                     

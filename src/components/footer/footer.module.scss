@@ -43,7 +43,7 @@ footer {
             
             &:hover {
                 a {
-                    color: $color-text;
+                    color: #22303C;
                 }
             }
             
@@ -62,6 +62,11 @@ footer {
                 font-size: 24px;
                 margin: 25px;
                 color: #2E6496;
+                transition: all ease .4s;
+
+                &:hover {
+                    color: #195185;
+                }
             }
         }
         
