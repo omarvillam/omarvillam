@@ -16,7 +16,7 @@ export default function Footer(): JSX.Element {
                 <img src="/images/logo.png" alt="Logo" />
 
                 <button>
-                    <a href="mailto:omarvilla0406@gmail.com">
+                    <a href="mailto:omar@ignitionwolf.com">
                         Contact
                     </a>
                 </button>
@@ -26,7 +26,7 @@ export default function Footer(): JSX.Element {
                         <FontAwesomeIcon icon={faGithub} />
                     </a>    
                     
-                    <a href="mailto:omarvilla0406@gmail.com">
+                    <a href="mailto:omar@ignitionwolf.com">
                         <FontAwesomeIcon icon={faEnvelope} />
                     </a>
                 </div>   

@@ -3,14 +3,14 @@
 @import "./reset";
 @import "./vars";
 
+@font-face {
+    font-family: "Harry";
+    src: url("/fonts/Harry Plain.otf");
+}
+
 html {
     color: #EFEFEF;
     font-family: "Harry";
-    font-weight: 900;
     background-color: #15202B;
-}
-
-@font-face {
-    font-family: "Harry";
-    src: "/fonts/Harry Fat.otf"
+    font-weight: 500;
 }

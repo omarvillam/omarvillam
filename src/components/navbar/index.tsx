@@ -10,7 +10,7 @@ export default function Navbar(): JSX.Element {
         <React.Fragment>
             <a href="#services">Services</a>
             <a href="#about">About</a>
-            <a href="mailto:omarvilla0406@gmail.com" className={styles.cta}>Contact</a>
+            <a href="mailto:omar@ignitionwolf.com" className={styles.cta}>Contact</a>
         </React.Fragment>
     )
     

@@ -4,6 +4,7 @@
 }
 
 @mixin button-primary {
+    font-family: 'Harry';
     background-color: transparent;
     cursor: pointer;
     color: $color-primary;

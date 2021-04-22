@@ -21,7 +21,7 @@ export default function Home() {
 						</div>
 
 						<div>
-							<a href="mailto:omarvilla0406@gmail.com">
+							<a href="mailto:omar@ignitionwolf.com">
 								<FontAwesomeIcon icon={faEnvelope} />Send me a email
 							</a>
 							
