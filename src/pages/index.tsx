@@ -41,7 +41,7 @@ export default function Home() {
 						<div>
 							<h1>About me</h1>
 
-							<p>My name is Omar Villalobos, I am a front-end developer with over 2 years of experience and I am available to use a variety of front-end technologies with the purpose of creating user-friendly pages with mobile features. I am proficient in JavaScript frameworks with TypeScript such as ReactJS, Redux, GatsbyJS, and NextJS, also I can work with prototyping tools for UI/UX in order to build high-quality mockups. Also, I am studying Global Business Management, I am capable to help the organization with my Business Management skills in lines of code</p>
+							<p>My name is Omar Villalobos, I am a front-end developer with over 5 years of experience in Web Development, and I am available to use a variety of front-end technologies with the purpose of creating user-friendly pages with mobile features. I am proficient in JavaScript frameworks with TypeScript such as ReactJS, Redux, GatsbyJS, and NextJS, also I can work with prototyping tools for UI/UX in order to build high-quality mockups. Also, I am studying Global Business Management, I am capable to help the organization with my Business Management skills in lines of code</p>
 
 							<p>TL:DR: Front end developer, React, Redux, Gatsby, Next. Prototyping tools and business management skills</p>
 						</div>
